@@ -1,13 +1,5 @@
-a = 10 #int
-b = 10.7 #float
-c = "Hello" #str
-d = True #bool
-l = [1, 2, 3] #list
-print(type(d))
-print(type(l))
-print (10 % 3)
-print(type(10 % 3))
-print(a / 3)
-print (a // 3)
-print(type(10 / 2))
-print(type(10 // 3))
+s = "abc"
+d = 2
+# error print(s + d)
+print (s + str(d))
+#run time error since "abc" impossible to convert to int  = print(int(s))
