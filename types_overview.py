@@ -1,14 +1,13 @@
-import random
-age = random.randint(1, 100)
-print ("age = ", age)
-if age < 13:
-    print("child")
-elif age < 20:
-    print("junior")
-elif age < 67:
-    print("adult")
-else:
-    print("pensioner")
+numbers = [1, 2, 3] # numbers is list, list relates to iterable type
+sum = 0
+for num in numbers:
+    sum = sum + num
+print(sum)
+# Range
+# range(start=0, stop, step=1)
+for i in range(5):
+    print (i)
+
 
 
   
