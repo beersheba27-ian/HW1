@@ -1,5 +1,6 @@
-s = "abc"
-d = 2
-# error print(s + d)
-print (s + str(d))
-#run time error since "abc" impossible to convert to int  = print(int(s))
+import random
+age = random.randint(1, 100)
+if age < 13:
+    print("child")
+else:
+    print("adult")
