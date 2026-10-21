@@ -13,16 +13,14 @@ def create_palindromic_list(start: int, stop: int) -> list[int]:
     note: "start" may be less than "stop"
     requirement: to use "int_reverse" function
     """  
-    result = []
     step = 1
     if start > stop:
         step = -1
-    for num in range(start, stop+step, step):
-        if str(num) == int_reverse(num):
-            result.append(num)
+    result = [x for x in range(start, stop+step, step) if str(x) == int_reverse(x)]
     return result
 
 print(create_palindromic_list(20, 40)) #should print   [22, 33] 
 print(create_palindromic_list(40, 20)) #should print   [33, 22] 
 print(create_palindromic_list(100, 151))
 print(create_palindromic_list(12, 12))
+print(create_palindromic_list(-100, 100))
